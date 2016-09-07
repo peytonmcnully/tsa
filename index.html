@@ -61,6 +61,7 @@ Opportunity:
 	<div class="row">
 		<div class="form-group col-xs-4">
 			<select class="form-control" id="categorySelect">
+			<option selected>Select ... </option>
 			{% for subcategory in category.attributes %}
 			<option>{{subcategory}}</option>
 			{%endfor%}
