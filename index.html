@@ -14,213 +14,33 @@ categories:
 ---
 
 <div class="container">
-		<div class="media">
-		  <div class="media-left col-xs-4">
-		    <a href="#">
-		      <img class="media-object img-fluid" src="https://www.tsa.com/assets/img/content/TSA-Canonical.jpg" alt="Logo">
-		    </a>
-		  </div>
-		  <div class="media-body">
-		    <h1 class="media-heading">New Deal Registration</h1>
-		  </div>
+	<div class="media">
+		<div class="media-left col-xs-4">
+		<a href="#">
+		<img class="media-object img-fluid" src="https://www.tsa.com/assets/img/content/TSA-Canonical.jpg" alt="Logo">
+		</a>
 		</div>
+		<div class="media-body">
+		<h1 class="media-heading">New Deal Registration</h1>
+		</div>
+	</div>
+	<p class="lead">Fill this form out or Corey will disable your badge.</p>
 
-	    <p class="lead">Fill this form out or Corey will disable your badge.</p>
+	<h3>General Info</h3>
+	<div class="row">
+	
+	</div>
 
-	    <h3>General Info</h3>
-		<div class="row">
-			
-		</div>
+	<h3>Opportunity Info</h3>
+	<div class="row">
+		<div class="col-sm-4">.col-sm-4</div>
+		<div class="col-sm-4">.col-sm-4</div>
+		<div class="col-sm-4">.col-sm-4</div>
+	</div>
+</div>
 
-	    	<h3>Opportunity Info</h3>
-		<div class="row">
-		  <div class="col-sm-4">.col-sm-4</div>
-		  <div class="col-sm-4">.col-sm-4</div>
-		  <div class="col-sm-4">.col-sm-4</div>
-		</div>
-		
-		{% for category in page.categories %}
-		{{ category }}
-		{% endfor %}
-		
-		{% for category in site.data.categories %}
-		<h3>{{category.key}}</h3>
-		{% endfor %}
-		<div class="row">
-		<div class="form-group">
-			<div class="col-xs-4">
-				<select class="custom-select">
-				<option selected>Select...</option>
-				<option value="HPEN Campus Switching and Routing">HPEN Campus Switching and Routing</option>
-				<option value="HPEN DC Networking and Routing TOR Security NGFW IMC Telephony USS">HPEN DC Networking and Routing TOR Security NGFW IMC Telephony USS</option>
-				<option value="HPEN Wireless Networking">HPEN Wireless Networking</option>
-				<option value="Platinum Campus Switching and Routing">Platinum Campus Switching and Routing</option>
-				<option value="Platinum DC Networking and Routing TOR Security NGFW IMC Telephony USS">Platinum DC Networking and Routing TOR Security NGFW IMC Telephony USS</option>
-				<option value="Platinum Wireless Routing">Platinum Wireless Routing</option>
-				</select>
-			</div>
-			<div class="col-xs-4">
-				<input type="text" class="form-control" name="book[0].price" placeholder="Price" />
-			</div>
-			<div class="col-xs-1">
-				<button type="button" class="btn btn-default addButton">+</button>
-			</div>
-		</div>
-		</div>
-		<ul>
-</ul>
-		<h3>Open Servers</h3>
-		<div class="row">
-		<div class="form-group">
-			<div class="col-xs-4">
-				<select class="custom-select">
-				<option selected>Select...</option>
-				<option value="Platinum Scale out Computing and HP">Platinum Scale out Computing and HP</option>
-				<option value="Platinum Servers Accessories Options and Software">Platinum Servers Accessories Options and Software</option>
-				<option value="Platinum Standard Servers and Blades">Platinum Standard Servers and Blades</option>
-				<option value="Scale Out Computing and HPC">Scale Out Computing and HPC</option>
-				<option value="Servers Accessories Options and Software">Servers Accessories Options and Software</option>
-				<option value="Standard Servers and Blades">Standard Servers and Blades</option>
-				</select>
-			</div>
-			<div class="col-xs-4">
-				<input type="text" class="form-control" name="book[0].price" placeholder="Price" />
-			</div>
-			<div class="col-xs-1">
-				<button type="button" class="btn btn-default addButton">+</button>
-			</div>
-		</div>
-		</div>
-		
-		<h3>Open Networking</h3>
-		<div class="row">
-		<div class="form-group">
-			<div class="col-xs-4">
-				<select class="custom-select">
-				<option selected>Select...</option>
-				<option value="HPEN Campus Switching and Routing">HPEN Campus Switching and Routing</option>
-				<option value="HPEN DC Networking and Routing TOR Security NGFW IMC Telephony USS">HPEN DC Networking and Routing TOR Security NGFW IMC Telephony USS</option>
-				<option value="HPEN Wireless Networking">HPEN Wireless Networking</option>
-				<option value="Platinum Campus Switching and Routing">Platinum Campus Switching and Routing</option>
-				<option value="Platinum DC Networking and Routing TOR Security NGFW IMC Telephony USS">Platinum DC Networking and Routing TOR Security NGFW IMC Telephony USS</option>
-				<option value="Platinum Wireless Routing">Platinum Wireless Routing</option>
-				</select>
-			</div>
-			<div class="col-xs-4">
-				<input type="text" class="form-control" name="book[0].price" placeholder="Price" />
-			</div>
-			<div class="col-xs-1">
-				<button type="button" class="btn btn-default addButton">+</button>
-			</div>
-		</div>
-		</div>
-		
-		<h3>Open Networking</h3>
-		<div class="row">
-		<div class="form-group">
-			<div class="col-xs-4">
-				<select class="custom-select">
-				<option selected>Select...</option>
-				<option value="HPEN Campus Switching and Routing">HPEN Campus Switching and Routing</option>
-				<option value="HPEN DC Networking and Routing TOR Security NGFW IMC Telephony USS">HPEN DC Networking and Routing TOR Security NGFW IMC Telephony USS</option>
-				<option value="HPEN Wireless Networking">HPEN Wireless Networking</option>
-				<option value="Platinum Campus Switching and Routing">Platinum Campus Switching and Routing</option>
-				<option value="Platinum DC Networking and Routing TOR Security NGFW IMC Telephony USS">Platinum DC Networking and Routing TOR Security NGFW IMC Telephony USS</option>
-				<option value="Platinum Wireless Routing">Platinum Wireless Routing</option>
-				</select>
-			</div>
-			<div class="col-xs-4">
-				<input type="text" class="form-control" name="book[0].price" placeholder="Price" />
-			</div>
-			<div class="col-xs-1">
-				<button type="button" class="btn btn-default addButton">+</button>
-			</div>
-		</div>
-		</div>
-		
-		<h3>Open Networking</h3>
-		<div class="row">
-		<div class="form-group">
-			<div class="col-xs-4">
-				<select class="custom-select">
-				<option selected>Select...</option>
-				<option value="HPEN Campus Switching and Routing">HPEN Campus Switching and Routing</option>
-				<option value="HPEN DC Networking and Routing TOR Security NGFW IMC Telephony USS">HPEN DC Networking and Routing TOR Security NGFW IMC Telephony USS</option>
-				<option value="HPEN Wireless Networking">HPEN Wireless Networking</option>
-				<option value="Platinum Campus Switching and Routing">Platinum Campus Switching and Routing</option>
-				<option value="Platinum DC Networking and Routing TOR Security NGFW IMC Telephony USS">Platinum DC Networking and Routing TOR Security NGFW IMC Telephony USS</option>
-				<option value="Platinum Wireless Routing">Platinum Wireless Routing</option>
-				</select>
-			</div>
-			<div class="col-xs-4">
-				<input type="text" class="form-control" name="book[0].price" placeholder="Price" />
-			</div>
-			<div class="col-xs-1">
-				<button type="button" class="btn btn-default addButton">+</button>
-			</div>
-		</div>
-		</div>
-		
-		<h3>Open Networking</h3>
-		<div class="row">
-		<div class="form-group">
-			<div class="col-xs-4">
-				<select class="custom-select">
-				<option selected>Select...</option>
-				<option value="HPEN Campus Switching and Routing">HPEN Campus Switching and Routing</option>
-				<option value="HPEN DC Networking and Routing TOR Security NGFW IMC Telephony USS">HPEN DC Networking and Routing TOR Security NGFW IMC Telephony USS</option>
-				<option value="HPEN Wireless Networking">HPEN Wireless Networking</option>
-				<option value="Platinum Campus Switching and Routing">Platinum Campus Switching and Routing</option>
-				<option value="Platinum DC Networking and Routing TOR Security NGFW IMC Telephony USS">Platinum DC Networking and Routing TOR Security NGFW IMC Telephony USS</option>
-				<option value="Platinum Wireless Routing">Platinum Wireless Routing</option>
-				</select>
-			</div>
-			<div class="col-xs-4">
-				<input type="text" class="form-control" name="book[0].price" placeholder="Price" />
-			</div>
-			<div class="col-xs-1">
-				<button type="button" class="btn btn-default addButton">+</button>
-			</div>
-		</div>
-		</div>
-		
-		<h3>Open Networking</h3>
-		<div class="row">
-		<div class="form-group">
-			<div class="col-xs-4">
-				<select class="custom-select">
-				<option selected>Select...</option>
-				<option value="HPEN Campus Switching and Routing">HPEN Campus Switching and Routing</option>
-				<option value="HPEN DC Networking and Routing TOR Security NGFW IMC Telephony USS">HPEN DC Networking and Routing TOR Security NGFW IMC Telephony USS</option>
-				<option value="HPEN Wireless Networking">HPEN Wireless Networking</option>
-				<option value="Platinum Campus Switching and Routing">Platinum Campus Switching and Routing</option>
-				<option value="Platinum DC Networking and Routing TOR Security NGFW IMC Telephony USS">Platinum DC Networking and Routing TOR Security NGFW IMC Telephony USS</option>
-				<option value="Platinum Wireless Routing">Platinum Wireless Routing</option>
-				</select>
-			</div>
-			<div class="col-xs-4">
-				<input type="text" class="form-control" name="book[0].price" placeholder="Price" />
-			</div>
-			<div class="col-xs-1">
-				<button type="button" class="btn btn-default addButton">+</button>
-			</div>
-		</div>
-		</div>
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
-
-	<script>
-		var categories = $( "#Categories" ).data();
-		html = gen_categories(categories);
-
-		function gen_categories(categories) {
-			for (var i = 0; i < categories.length; i++) {
-			$("#Categories").append("<h3>" + categories[i] + "</h3>")
-			console.log(categories)
-			}
-		}
-		
-	</script>
