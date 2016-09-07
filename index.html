@@ -31,7 +31,7 @@ permalink: /
 		</div>
 		
 		{% for category in site.data.categories %}
-		<h3>{{category}}</h3>
+		<h3>{{category.key}}</h3>
 		{% endfor %}
 		<div class="row">
 		<div class="form-group">
@@ -55,13 +55,6 @@ permalink: /
 		</div>
 		</div>
 		<ul>
-{% for member in site.data.members %}
-  <li>
-    <a href="https://github.com/{{ member.github }}">
-      {{ member.name }}
-    </a>
-  </li>
-{% endfor %}
 </ul>
 		<h3>Open Servers</h3>
 		<div class="row">
