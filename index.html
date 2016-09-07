@@ -43,7 +43,7 @@ categories:
 	<div class="row">
 		<div class="form-group col-xs-4">
 			<select class="form-control" id="categorySelect">
-			{% for subcategory in site.data.categories[category] %}
+			{% for subcategory in site.data.categories %}
 			<option>{{subcategory}}</option>
 			{%endfor%}
 			</select>
