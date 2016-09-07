@@ -59,7 +59,7 @@ Opportunity:
 	{% for category in site.data.categories %}
 	<h3>{{ category.name }}</h3>
 	<div class="row">
-		<div class="form-group col-xs-4">
+		<div class="form-group col-xs-6">
 			<select class="form-control" id="categorySelect">
 			<option selected>Select ... </option>
 			{% for subcategory in category.attributes %}
@@ -67,7 +67,7 @@ Opportunity:
 			{%endfor%}
 			</select>
   		</div>
-  		<div class="form-group col-xs-4">
+  		<div class="form-group col-xs-2">
   			<div class="input-group">
 				<div class="input-group-addon">$</div>
 				<input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
