@@ -1,7 +1,16 @@
 ---
 layout: default
 title: index
-permalink: /
+categories: 
+   - Open Networking
+   - Open Servers
+   - Open Storage
+   - Select Business Critical
+   - Select Networking
+   - Select Servers
+   - Select Software
+   - Select Storage
+   - Services
 ---
 
 <div class="container">
@@ -29,6 +38,10 @@ permalink: /
 		  <div class="col-sm-4">.col-sm-4</div>
 		  <div class="col-sm-4">.col-sm-4</div>
 		</div>
+		
+		{% for category in page.categories %}
+		{{ category }}
+		{% endfor %}
 		
 		{% for category in site.data.categories %}
 		<h3>{{category.key}}</h3>
