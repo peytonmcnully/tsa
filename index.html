@@ -39,11 +39,11 @@ categories:
 	</div>
 	
 	{% for category in site.data.categories %}
-	<h3>{{category[0]}}</h3>
+	<h3>{{ category.name }}</h3>
 	<div class="row">
 		<div class="form-group col-xs-4">
 			<select class="form-control" id="categorySelect">
-			{% for subcategory in category[1] %}
+			{% for subcategory in category.attributes %}
 			<option>{{subcategory}}</option>
 			{%endfor%}
 			</select>
